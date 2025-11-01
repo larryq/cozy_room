@@ -42,8 +42,8 @@ export default function Scene() {
       //   }}
     >
       {/* Lighting */}
-      <ambientLight intensity={2.5} />
-      <directionalLight position={[5, 10, 5]} intensity={11} />
+      <ambientLight intensity={0.05} />
+      <directionalLight position={[5, 10, 5]} intensity={0.01} />
       <Environment files="/assets/plains_sunset_2k.hdr" background blur={0.8} />
       {/* <Environment
         files="/assets/rural_evening_road_2k.hdr"
