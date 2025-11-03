@@ -34,7 +34,7 @@ export default function Scene() {
   return (
     <Canvas
       //''10.95', '5.03', '-4.04'
-      camera={{ position: [10.95, 5.03, -4.04], fov: 50 }}
+      camera={{ position: [12.4, 5.47, -4.72], fov: 50 }}
       //   camera={{ position: [10.09, 4.41, -5.83], fov: 50 }}
       //   gl={{
       //     toneMapping: THREE.ACESFilmicToneMapping,
@@ -54,11 +54,14 @@ export default function Scene() {
       {/* Controls */}
       <OrbitControls
         ref={controlsRef}
-        target={[2.22, 2.39, 0.06]} //'2.22', '2.39', '0.06'
+        //target={[2.22, 2.39, 0.06]} //'2.22', '2.39', '0.06'
+        target={[3.67, 2.83, -0.62]}
         minPolarAngle={Math.PI / 3}
         maxPolarAngle={Math.PI / 2.2}
-        minAzimuthAngle={-Math.PI}
-        maxAzimuthAngle={Math.PI / 1}
+        //minAzimuthAngle={-Math.PI}
+        //maxAzimuthAngle={Math.PI / 1}
+        minAzimuthAngle={Math.PI / 2 - 0.5}
+        maxAzimuthAngle={Math.PI}
         enableZoom={true}
         maxDistance={15}
         minDistance={3}
